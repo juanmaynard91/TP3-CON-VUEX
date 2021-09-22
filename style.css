@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  background-repeat: no-repeat;
+}
+
+body.container, body h1, body ul, body h2, body p {
+  color: black !important;
+}
+
+body.dark {
+  background: -webkit-gradient(linear, left top, right top, from(#134e5e), to(#71b280));
+  background: linear-gradient(to right, #134e5e, #71b280);
+  background-repeat: no-repeat;
+}
+
+body.dark.container, body.dark h1, body.dark ul, body.dark h2, body.dark p {
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  html {
+    width: 30rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
