@@ -1,31 +1,44 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import Header from "./views/Header.vue";
+import Footer from "./views/Footer.vue";
+import { mapActions } from "vuex";
+
+export default {
+  components: { Header, Footer },
+
+  methods: {
+    ...mapActions(["leerToken"]),
+  },
+
+  created() {
+    this.$store.dispatch("leerToken"); //CREATED EN APP PORQUE INDEPENDIENTEMENTE SI ESTA EN HOME O ABOUT SIEMPRE GUARDA EL TOKEN EN EL LOCALSTORAGE
+  },
+};
+</script>
+
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 115rem;
   text-align: center;
+  word-spacing: 5px;
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+@media (max-width: 766px) {
+  #app {
+    height: 155rem !important;
+  }
+  @media (max-width: 500px) {
+    #app {
+      width: 29.6rem;
     }
   }
 }

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$fondo-claro: linear-gradient(to right, #11998e, #38ef7d);
+$texto-negro: black !important;
+
+$fondo-oscuro: linear-gradient(to right, #134e5e, #71b280);
+$texto-blanco: white !important;
+
+body {
+  background: $fondo-claro;
+  background-repeat: no-repeat;
+
+  &.container, h1, ul, h2, p {
+    color: $texto-negro;
+  }
+
+  &.dark {
+    background: $fondo-oscuro;
+    background-repeat: no-repeat;
+    
+    &.container, h1, ul, h2, p {
+      color: $texto-blanco;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  html{
+    width: 30rem;
+  }
+}
+
