@@ -1,6 +1,7 @@
-Trabajo Practico 3 hecho con Vuex
+DESCIPCION: Aplicacion actualizada del ultimo trabajo practico de AMEMT, donde añadi animaciones, registro con Firebase y cambio de tema nocturno
 
-Link: https://juanmaynard91.github.io/TP3-CON-VUEX/
+
+LINK: https://juanmaynard91.github.io/TP3-CON-VUEX/
 
 ![TP3-HOME](https://user-images.githubusercontent.com/74424452/134407201-e2987132-e62d-4a94-bbb5-a204667dce9a.png)
 
