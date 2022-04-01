@@ -1,4 +1,5 @@
-DESCIPCION: Aplicacion actualizada del ultimo trabajo practico de AMEMT, donde añadi animaciones, registro con Firebase y cambio de tema claro / oscuro
+DESCIPCION: Aplicacion actualizada del ultimo trabajo practico de AMEMT, donde añadi animaciones, diseño responsivo,
+registro con Firebase y cambio de tema claro / oscuro
 
 LINK: https://juanmaynard91.github.io/TP3-CON-VUEX/
 
